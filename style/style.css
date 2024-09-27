@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Pangolin-Regular';
+    src: url('/font/Pangolin-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.header_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    font-family: 'Pangolin-regular';
+    padding: 15px;
+    background-color: coral;
+    margin: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.heading {
+    margin: 20px;
+    font-family: 'Pangolin-regular';
+    font-size: 45px;
+    text-align: center;
+}
+#loader{
+    display: none;
+    font-family: 'Pangolin-regular';
+    font-size: 45px;
+    text-align: center;
+}
+#messages__errorMessage{
+    display:none;
+}
+
+.content_box {
+    background-color: rgba(0, 147, 29, 0.29);
+    width: 100%;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.Gallery{
+    padding: 30px;
+    margin: 0;
+}
+.content_box ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.content_box ul li {
+    list-style: none;
+    height: 300px;
+    position: relative;
+}
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .img {
+        width: 100%;
+    }
+
+    .content_box ul li {
+        list-style: none;
+        height: 300px;
+        position: relative;
+        width: 90%;
+    }
+}
